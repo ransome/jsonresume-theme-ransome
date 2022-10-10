@@ -17,12 +17,17 @@
                 {{#if url}}
                   <span class="url">
                     <span class="fas fa-external-link-alt"></span>
-                    <a target="_blank" href="{{url}}">{{name}}</a>
+                    <a target="_blank" href="{{url}}">
+                      <div class="name">
+                        {{name}}
+                      </div>
+                    </a>
                   </span>
+                {{else}}
+                  <div class="name">
+                    {{name}}
+                  </div>
                 {{/if}}
-                <div class="name">
-                  {{name}}
-                </div>
               {{/if}}
               {{#if issuer}}
                 <div class="issuer">
