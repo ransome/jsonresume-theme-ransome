@@ -14,6 +14,12 @@
             {{/if}}
             <div class="header-left">
               {{#if name}}
+                {{#if url}}
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="{{url}}">{{name}}</a>
+                  </span>
+                {{/if}}
                 <div class="name">
                   {{name}}
                 </div>
@@ -25,15 +31,6 @@
               {{/if}}
             </div>
           </header>
-
-          <div class="item">
-            {{#if url}}
-              <span class="url">
-                <span class="fas fa-external-link-alt"></span>
-                <a target="_blank" href="{{url}}">{{url}}</a>
-              </span>
-            {{/if}}
-          </div>
         </section>
       {{/each}}
     </section>
