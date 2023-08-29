@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-jdambron",
-  "version": "1.0.5",
-  "description": "Julien Dambron's theme for JSON Resume",
-  "author": "Julien Dambron",
+  "name": "jsonresume-theme-ransome",
+  "version": "1.0.1",
+  "description": "Ransome Coleman's theme for JSON Resume",
+  "author": "Ransome Coleman",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jdambron/jsonresume-theme-jdambron"
+    "url": "https://github.com/ransome/jsonresume-theme-ransome"
   },
   "license": "MIT",
   "main": "index.js",
