@@ -271,12 +271,12 @@ section .location {
 .section-title {
   display: inline-block;
   background: #fff;
-  padding: 0 1em 0.3em 0;
+  padding: 0 1em 0.8em 0;
   color: #ff6d1f;
   text-transform: uppercase;
   font-weight: 600;
   border: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .section > header {
@@ -287,6 +287,7 @@ section .location {
   margin-right: 0.25em;
 }
 
+/*
 .section > header::after {
   position: absolute;
   left: 0;
@@ -298,6 +299,7 @@ section .location {
   z-index: -100;
   display: block;
 }
+*/
 
 .section.main-summary > section {
   margin: 0;
@@ -498,11 +500,29 @@ section .location {
 }
 
 #languages .item,
-#skills .item,
-#interests .item {
+#skills .item {
   width: 15em;
   padding: 0 0.5em 0.5em 0;
   border-bottom: none;
+}
+
+.comma-list {
+  display: inline;
+  list-style: none;
+  padding: 0px;
+}
+
+.comma-list li {
+  display: inline;
+  margin-left: 0
+}
+
+.comma-list li::after {
+  content: ", ";
+}
+
+.comma-list li:last-child::after {
+  content: "";
 }
 
 #skills .item {
@@ -617,9 +637,6 @@ section .location {
   .section > section > header .space-left {
     opacity: 1;
     cursor: pointer;
-  }
-  .section > section:not(.main-summary) {
-    margin-left: 1.67rem;
   }
   .company::before,
   .institution::before,

@@ -1,28 +1,18 @@
 {{#if resume.interests.length}}
 <section class="section">
   <header>
-    <h2 class='section-title' class='section-title'>Interests</h2>
+    <h2 class='section-title' class='section-title'>Non-Professional Interests</h2>
   </header>
   <section id="interests">
-    {{#each resume.interests}}
-    <div class="item">
-      {{#if name}}
-      <h3 class="name">
-        {{name}}
-      </h3>
-      {{/if}}
-      {{#if keywords.length}}
-      <ul class="keywords">
-        {{#each keywords}}
-        <li>{{.}}</li>
-        {{/each}}
-      </ul>
-      {{/if}}
-      {{#if summary}}
-        <div class="summary">{{paragraphSplit summary}}</div>
-      {{/if}}
-    </div>
-    {{/each}}
+    <ul class="comma-list">
+      {{#each resume.interests}}
+        {{#if name}}
+        <li>
+          {{name}}
+        </li>
+        {{/if}}
+      {{/each}}
+    </ul>
   </section>
 </section>
 {{/if}}
